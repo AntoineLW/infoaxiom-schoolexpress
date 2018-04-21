@@ -20,10 +20,19 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!-- log 配置 -->
     <log.moduleName>infoaxiom-schoolexpress</log.moduleName>
     <log.base>/home/mi/log</log.base>
     <log.other.level>ERROR</log.other.level>
     <log.root.level>ERROR</log.root.level>
+
+    <!-- db 配置 -->
+    <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
+    <jdbc.url>jdbc:mysql://127.0.0.1:3306/test</jdbc.url>
+    <jdbc.username>root</jdbc.username>
+    <jdbc.password>1qaz!QAZ</jdbc.password>
+
   </properties>
 
 
@@ -37,10 +46,18 @@
       <!-- 以下配置properties中用到一些变量，如数据库连接参数、日志打印等 -->
       <properties>
 
+        <!-- log 配置 -->
         <log.moduleName>infoaxiom-schoolexpress</log.moduleName>
         <log.base>/home/mi/log</log.base>
         <log.other.level>DEBUG</log.other.level>
         <log.root.level>DEBUG</log.root.level>
+
+        <!-- db 配置 -->
+        <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
+        <jdbc.url>jdbc:mysql://127.0.0.1:3306/test</jdbc.url>
+        <jdbc.username>root</jdbc.username>
+        <jdbc.password>1qaz!QAZ</jdbc.password>
+
       </properties>
     </profile>
   </profiles>
